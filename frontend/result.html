@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Room</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+
+<body>
+
+    <main class="container">
+
+        <div class="card result-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="small-title">
+                YOUR TEAM
+            </p>
+
+            <h1 id="teamName">
+                Team
+            </h1>
+
+            <p class="small-title">
+                YOUR ROOM
+            </p>
+
+            <div class="room-number" id="roomNumber">
+                Room 1
+            </div>
+
+            <p class="subtitle">
+                Please proceed to your assigned room.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const team =
+            params.get("team");
+
+        const room =
+            params.get("room");
+
+
+        if (team) {
+            document.getElementById("teamName")
+                .textContent = team;
+        }
+
+
+        if (room) {
+            document.getElementById("roomNumber")
+                .textContent = `Room ${room}`;
+        }
+
+    </script>
+
+</body>
+
+</html>

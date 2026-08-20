@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Room Admin</title>
+
+    <link rel="stylesheet" href="/admin.css">
+
+</head>
+
+
+<body>
+
+    <div class="admin-container">
+
+        <h1>Room Status</h1>
+
+        <p id="total">
+            Total Teams: 0
+        </p>
+
+
+        <div class="rooms" id="rooms">
+
+        </div>
+
+
+        <h2>Team Assignments</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Team</th>
+                        <th>Room</th>
+                        <th>Time</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="teamTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <button
+            class="reset-button"
+            id="resetButton"
+        >
+            Reset All Assignments
+        </button>
+
+    </div>
+
+
+    <script src="/admin.js"></script>
+
+</body>
+
+</html>

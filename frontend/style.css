@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f5f7fa,
+        #e8ecf3
+    );
+
+    color: #222;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 20px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: white;
+
+    font-size: 28px;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+form {
+    text-align: left;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    margin-bottom: 18px;
+}
+
+
+input:focus {
+    border-color: #111;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.error {
+    color: #d93025;
+
+    margin-top: 15px;
+
+    min-height: 20px;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: white;
+
+    font-size: 35px;
+}
+
+
+.small-title {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+.room-number {
+    font-size: 50px;
+
+    font-weight: 800;
+
+    margin: 15px 0 20px;
+}
